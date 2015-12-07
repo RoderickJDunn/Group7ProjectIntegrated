@@ -6,9 +6,9 @@
 <item
     android:id="@+id/action_bar"
     android:title="@string/About"
-    android:orderInCategory="10"
+    android:orderInCategory="107"
 
-    app:showAsAction="always" />
+    app:showAsAction="ifRoom" />
 
 
 </menu>

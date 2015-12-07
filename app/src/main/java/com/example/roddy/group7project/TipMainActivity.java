@@ -6,6 +6,7 @@
 package com.example.roddy.group7project;
 
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v7.app.ActionBarActivity;
@@ -29,6 +30,7 @@ public class TipMainActivity extends ActionBarActivity implements TipFragmentCal
 //        transaction.addToBackStack(null);
         transaction.add(R.id.fragment_container_tip, tipListFragment).commit();
     }
+
 
     @Override
     public void addExpenseItem(){
@@ -75,10 +77,33 @@ public class TipMainActivity extends ActionBarActivity implements TipFragmentCal
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
+
+        int id = item.getItemId();
+
+        if (id == R.id.action_settings) {
+            return true;
+        }
+        switch (id){
+            case R.id.tip_calc:
+                go(TipMainActivity.class);
+                break;
+            case R.id.time_track:
+                go(A2_MainActivity.class);
+                break;
+            case R.id.carb_calc:
+                go(CarbCalculatorActivity.class);
+                break;
+            case R.id.contacts:
+                go(ContactActivity.class);
+                break;
+
+        }
         return super.onOptionsItemSelected(item);
+    }
+
+    private void go(Class c) {
+        Intent intent = new Intent(this, c);
+        startActivity(intent);
     }
 
     @Override

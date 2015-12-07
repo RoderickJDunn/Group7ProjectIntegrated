@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!-- Copyright © 2011-2013 mysamplecode.com, All rights reserved.
+    This source code is provided to students of CST2335 for educational purposes only.
+    -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="6dip"
+    android:id="@+id/detailed_fragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Detailed Info Of The Expense"
+        android:id="@+id/title"
+        android:layout_weight="1"
+        android:singleLine="true"
+        android:textColor="#0000FF"
+        android:textIsSelectable="false"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Restaurant Name: "
+            android:id="@+id/textView"
+            android:layout_weight="1"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/name_detail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_gravity="center_horizontal"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Normal Amount($): "
+            android:id="@+id/textView2"
+            android:layout_weight="1"
+            android:textSize="18dp"
+            android:textIsSelectable="false" />
+
+        <TextView
+            android:id="@+id/normal_expense_detail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/name_detail"
+            android:layout_below="@+id/name_detail"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_weight="2"
+            android:layout_gravity="center_horizontal"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Tip Rate(%): "
+            android:id="@+id/textView3"
+            android:textSize="18dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tip_rate_detail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/normal_expense_detail"
+            android:layout_below="@+id/normal_expense_detail"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_weight="2"
+            android:layout_gravity="center_horizontal"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Tip Amount($): "
+            android:id="@+id/textView4"
+            android:textSize="18dp"
+            android:layout_weight="1"
+            android:password="false" />
+
+        <TextView
+            android:id="@+id/tip_amount_detail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tip_rate_detail"
+            android:layout_below="@+id/tip_rate_detail"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_weight="2"
+            android:layout_gravity="center_horizontal"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Total Amount($): "
+            android:id="@+id/textView5"
+            android:textSize="18dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/total_amount_detail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_alignLeft="@+id/tip_amount_detail"
+            android:layout_below="@+id/tip_amount_detail"
+            android:layout_gravity="center_horizontal"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Note: "
+            android:id="@+id/textView6"
+            android:textSize="18dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/note_detail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/total_amount_detail"
+            android:layout_below="@+id/total_amount_detail"
+            android:layout_weight="2"
+            android:layout_gravity="center_horizontal"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Date: "
+            android:id="@+id/textView7"
+            android:textSize="18dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/date_detail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_alignLeft="@+id/note_detail"
+            android:layout_below="@+id/note_detail"
+            android:layout_gravity="center_horizontal"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Same restr. Summary"
+            android:id="@+id/show_summary"
+            android:gravity="center_vertical"
+            android:textColor="#0000FF"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:id="@+id/delete_exp"
+            android:gravity="center_vertical"
+            android:textColor="#FF0000"
+            android:textStyle="bold"
+            android:onClick="deleteExp"
+            android:layout_gravity="right" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/summary_info"
+        android:layout_gravity="center_vertical"
+        android:textSize="18dp" />
+
+</LinearLayout>

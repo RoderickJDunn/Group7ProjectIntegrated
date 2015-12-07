@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:id="@+id/carb_calc_activity_large"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+
+
+       <!-- <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titleListTrips"
+            android:textSize="30dp"/>-->
+        <fragment
+            class="com.example.tgk.groupProject.CarbCalcListFragment"
+            android:id="@+id/list_pane"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:id="@+id/details_add_pane">
+
+    </FrameLayout>
+    <!--<fragment
+        android:id="@+id/details_add_pane"
+        class="com.example.tgk.integration.CarbCalcDetailFragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"/>-->
+
+
+
+</LinearLayout>

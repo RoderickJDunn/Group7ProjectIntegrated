@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:id="@+id/add_contact_frag"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:background="#FF00FF"
+        >
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="4"
+            android:rowCount="1"
+            >
+            <TextView
+                android:text="New Contact"
+                android:textSize="25dip"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:layout_columnSpan="3"
+                android:textColor="@color/highlighted_text_material_light"
+            />
+            <Button
+                android:id="@+id/done_button_contact"
+                android:layout_columnSpan="1"
+                android:layout_gravity="right"
+                android:text="@string/done_button"
+                />
+        </GridLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text=""
+            android:hint="First Name"
+            android:ems="10"
+            style="@style/addContactStyle"
+            android:id="@+id/first_name_input" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text=""
+            android:hint="Last Name"
+            android:ems="10"
+            style="@style/addContactStyle"
+            android:id="@+id/last_name_input" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:ems="10"
+            android:hint="Phone Number"
+            style="@style/addContactStyle"
+            android:id="@+id/phone_number_input" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:hint="E-mail"
+            style="@style/addContactStyle"
+            android:id="@+id/email_input" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/date_input"
+            android:hint="Date"
+            style="@style/addContactStyle"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/note_input"
+            android:hint="Note"
+            style="@style/addContactStyle"
+            android:textAlignment="textStart"
+            android:gravity="top|left"
+            android:minHeight="60dip" />
+    </LinearLayout>
+</ScrollView>

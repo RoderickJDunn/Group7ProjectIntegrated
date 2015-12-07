@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/tip_calc" android:title="Tip Calculator"
+        android:icon="@drawable/ic_tip_calc"
+        android:orderInCategory="101" app:showAsAction="always" />
+    <item android:id="@+id/time_track" android:title="Time and Activity Tracker"
+        android:icon="@drawable/ic_time_track"
+        android:orderInCategory="102" app:showAsAction="always" />
+    <item android:id="@+id/carb_calc" android:title="Carbon Footprint Calculator"
+        android:icon="@drawable/ic_carb_calc"
+        android:orderInCategory="103" app:showAsAction="always" />
+    <item android:id="@+id/contacts" android:title="Contacts"
+        android:icon="@drawable/ic_contacts"
+        android:orderInCategory="104" app:showAsAction="always" />
+</menu>

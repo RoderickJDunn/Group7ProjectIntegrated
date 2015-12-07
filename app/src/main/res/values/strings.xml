@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">Project (Group 7)</string>
+
+    <!-- Tip Calculator Strings-->
+    <string name="welcomeScreen">This project is a group of 4 project. The team number is group07.
+        You can click the small robot to enter the detail function.
+        1.Tip Calculator and Restaurant Expense Tracker by Jiebin Gao;
+        2.Time and Activity Tracker by Fang He;
+        3.Carbon Footprint Calculator;
+        4.Contacts List!</string>
+    <string name="app_name_tip">Tip Calculator</string>
+    <!--<string name="action_settings">Settings</string>-->
+    <string name="action_expense_tracker">Expense Tracker</string>
+    <string name="some_text">All Expense Records!</string>
+    <string name="some_hint">Type here to filter&#8230;</string>
+
+    <string name="About">About</string>
+
+
+    <!-- Activity 2's Strings  -->
+    <string name="a2_app_name">TASK AND TIME TRACKER</string>
+
+
+    <string name="a2_til_taskid">TASK ID</string>
+    <string name="a2_til_title">TITLE</string>
+    <string name="a2_til_category">CATEGORY</string>
+    <string name="a2_til_duration">DURATION</string>
+    <string name="a2_til_priority">PORIORITY</string>
+    <string name="a2_til_note">NOTE</string>
+    <string name="a2_til_date">DATE</string>
+    <string name="a2_til_instructor">READ ME</string>
+    <string name="a2_til_taskdetail">TASK DETAILS</string>
+
+
+    <string name="a2_btn_tasklist">TASK LIST</string>
+    <string name="a2_btn_OK">OK</string>
+    <string name="a2_btn_addnewtask">ADD NEW TASK</string>
+    <string name="a2_btn_summary">CATEGORY SUMMARY</string>
+    <string name="a2_btn_cancel">CANCEL</string>
+    <string name="a2_btn_save">SAVE</string>
+    <string name="a2_btn_delete">DELETE</string>
+
+
+
+    <string-array name="a2_priority_array">
+        <item>Low</item>
+        <item>Med</item>
+        <item>High</item>
+    </string-array>
+
+    <!-- A3 -Carbon Calculator Strings -->
+    <string name="action_settings">Settings</string>
+    <string name="done_button">Done</string>
+    <string name="titleListTrips">Trips</string>
+    <string name="instructions_body1">
+        \ - You must enter \'Category\' at least\n
+        - Typing in a distance will cause the \'CO2\' field to update in real time\n
+        - CO2 is calculated by multiplying the distance by the specific factor for each vehicle type\n
+        - This factor assumes a typical number of passengers for that particular vehicle\n
+        - Press \'Done\' when you are finished entering information\n
+    </string>
+
+    <string name="instructions_body2">
+        \ - Tap \'Delete\' the trip\n
+        - Tap \'Edit\' to edit its information
+    </string>
+
+    <string-array name="vehicles_array">
+        <item>Car</item>
+        <item>Plane</item>
+        <item>Motorbike</item>
+        <item>Bus</item>
+        <item>Train</item>
+    </string-array>
+
+    <!-- Contacts strings -->
+    <string name="titleListContacts">Contacts</string>
+</resources>

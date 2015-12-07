@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:id="@+id/carb_calc_activity_large"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+
+        <fragment
+            class="com.example.roddy.group7project.ContactList"
+            android:id="@+id/list_pane"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:id="@+id/contact_desc_add_pane">
+
+    </FrameLayout>
+
+
+
+
+</LinearLayout>

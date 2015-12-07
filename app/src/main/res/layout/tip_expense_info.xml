@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!-- Copyright © 2011-2013 mysamplecode.com, All rights reserved.
+    This source code is provided to students of CST2335 for educational purposes only.
+    -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="6dip" >
+
+    <TextView
+        android:id="@+id/expid_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Expense ID: "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/name_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Restaurant Name: "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <!--<TextView-->
+        <!--android:id="@+id/normal_expense_info"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignLeft="@+id/name_info"-->
+        <!--android:layout_below="@+id/name_info"-->
+        <!--android:text="Normal Expense($): "-->
+        <!--android:textAppearance="?android:attr/textAppearanceMedium" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/tip_rate_info"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignLeft="@+id/normal_expense_info"-->
+        <!--android:layout_below="@+id/normal_expense_info"-->
+        <!--android:text="Tip Rate(%): "-->
+        <!--android:textAppearance="?android:attr/textAppearanceMedium" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/tip_amount_info"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignLeft="@+id/tip_rate_info"-->
+        <!--android:layout_below="@+id/tip_rate_info"-->
+        <!--android:text="Tip Amount($): "-->
+        <!--android:textAppearance="?android:attr/textAppearanceMedium" />-->
+
+    <TextView
+        android:id="@+id/total_amount_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_alignLeft="@+id/tip_amount_info"
+        android:layout_below="@+id/tip_amount_info"
+        android:text="Total Amount($):" />
+
+    <!--<TextView-->
+        <!--android:id="@+id/note_info"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignLeft="@+id/total_amount_info"-->
+        <!--android:layout_below="@+id/total_amount_info"-->
+        <!--android:text="Note:" />-->
+
+    <TextView
+        android:id="@+id/date_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_alignLeft="@+id/note_info"
+        android:layout_below="@+id/note_info"
+        android:text="Date:" />
+
+</LinearLayout>
